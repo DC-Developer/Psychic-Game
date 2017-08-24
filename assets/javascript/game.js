@@ -24,7 +24,7 @@ document.onkeyup = function(event) {
             wins++;
             guessesLeft = 9;
             guessesSoFar = [];
-            random = latters[Math.floor(Math.random() * letters.length)];
+            random = letters[Math.floor(Math.random() * letters.length)];
            
         }
         if (guessesLeft == 0) {
@@ -37,4 +37,4 @@ document.onkeyup = function(event) {
         var update = "<p>Wins: " + wins+"</p><br>"+ "<p>Losses: " + losses+ "</p><br>"+ "<p>Guesses left: " +guessesLeft+ "</p><br>" + "<p>Your guesses so far: " + guessesSoFar+ "</p>";
         
         document.querySelector("#content").innerHTML = update;
-    }   
+    }    
